@@ -10,6 +10,7 @@ h5 {
 }
 
 body {
+
 }
 
 nav {
@@ -124,7 +125,38 @@ button:hover {
     padding: 3rem calc((100vw - 1300px) / 2);
 }
 
+@media (max-width: 768px) {
+    nav {
+        height: auto;
+    }
 
+    body {
+        background-color: darkgrey;
+    }
 
+    .logo {
+        font-size: 1.5rem;
+    }
 
+    .nav-items {
+        font-size: 0.5rem;
+    }
 
+    .hero-container {
+        grid-template-columns: 1fr;
+    }
+
+    .column-left,
+    .column-right {
+        text-align: center;
+        padding: 0;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+    
+    .popis {
+        font-size: 65%;
+    }
+}
