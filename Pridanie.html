@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pixelcradle</title>
+    <link rel="icon" type="image/png" href=".images/logo_joystick.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="bodyComment">
+<nav>
+    <div class="logo">Pixelcradle</div>
+    <div class="nav-items">
+        <a href="index.html">Domov</a>
+        <a href="ZoznamHier.html">Zoznam hier</a>
+        <a href="ONas.html">O nás</a>
+    </div>
+</nav>
+
+<table>
+    <tr>
+        <td>
+            <form autocomplete="off" onsubmit="onFormSubmit()">
+                <div>
+                    <label for="Comment">Komentár</label>
+                    <input type="text" name="Comment" id="Comment">
+                </div>
+
+                <div>
+                    <label for="idComment">Komentár ID</label>
+                    <input type="number" name="idComment" id="idComment">
+                </div>
+
+                <div>
+                    <label for="Nickname">Nickname</label>
+                    <input type="text" name="Nickname" id="Nickname">
+                </div>
+
+                <div class="form_action--button">
+                    <input type="Submit" value="Submit">
+                    <input type="Reset" value="Reset">
+                </div>
+            </form>
+        </td>
+            <td>
+                <table class="list" id="storeList">
+                    <thead>
+                        <tr>
+                            <th>Komentár</th>
+                            <th>Komentár ID</th>
+                            <th>Nickname</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+    </tr>
+</table>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

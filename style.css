@@ -6,16 +6,18 @@
 }
 
 h5 {
-    color: white;
+    color: whitesmoke !important;
+    color-rendering: optimizeQuality;
 }
 
 body {
-
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 nav {
     height: 80px;
-    background-color: darkgrey;
+    background-color: grey;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,11 +27,7 @@ nav {
 h1 {
     margin-bottom: 5px;
     margin-top: 100px;
-}
-
-h5 {
-    color: whitesmoke;
-    color-rendering: optimizeQuality;
+    color: white;
 }
 
 p {
@@ -38,7 +36,7 @@ p {
 }
 
 .logo {
-    color: whitesmoke;
+    color: white;
     font-size: 3rem;
     font-weight: bold;
     font-style: oblique;
@@ -47,7 +45,7 @@ p {
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 0 1.5rem;
 }
 
@@ -89,13 +87,18 @@ nav a:hover {
 }
 
 button {
+    border-radius: 35px !important;
     padding: 1.5rem 3rem;
     font-size: 1rem;
     border: none;
     color: white;
     background: black;
     cursor: pointer;
-    border-radius: 50px;
+}
+
+button.pridaj {
+    top: 10%;
+    left: 50%;
 }
 
 button:hover {
@@ -116,7 +119,7 @@ button:hover {
 }
 
 .backgroundSideImage {
-    background-image: url("/.images/pozadieSide.jpg");
+    background-image: url("/.images/stena.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     display: grid;
@@ -131,32 +134,108 @@ button:hover {
     }
 
     body {
-        background-color: darkgrey;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
     }
 
     .logo {
-        font-size: 1.5rem;
+        font-size: 150%;
     }
 
     .nav-items {
-        font-size: 0.5rem;
+        position: fixed;
+        font-size: 50%;
+        margin-left: 50%;
     }
 
     .hero-container {
-        grid-template-columns: 1fr;
+
     }
 
-    .column-left,
-    .column-right {
-        text-align: center;
-        padding: 0;
+    .column-left h1 {
+        font-size: 100%;
+    }
+
+    .column-left p {
+        font-size: 80%;
+    }
+
+    .column-left button {
+        position: relative;
     }
 
     .hero-image {
         width: 100%;
+        height: 40%;
+
     }
-    
-    .popis {
-        font-size: 65%;
+
+    p {
+        font-size: 60%;
+    }
+
+    h1 {
+        font-size: 80%;
+        margin-left: 30%;
     }
 }
+
+body.bodyComment {
+    background-image: url("/.images/backgroundComment.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+table {
+    width: 80%;
+    margin: 40px auto;
+    background: lightgrey;
+}
+table.list {
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+td {
+    border: 1px solid whitesmoke;
+    text-align: left;
+    padding: 8px 15px;
+}
+
+tr:nth-child(even), table.list thread> tr{
+    background-color: lightgray;
+}
+
+input[type="text"],input[type="number"] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+
+input[type="submit"],input[type="reset"] {
+    background: whitesmoke;
+    padding: 6px 12px;
+    margin: 15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover {
+    background: lightblue;
+}
+
+input[type="reset"]:hover {
+    background: lightblue;
+}
+
